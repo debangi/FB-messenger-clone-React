@@ -1,0 +1,10 @@
+.message {
+  /* padding: 2px; */
+  width: fit-content;
+  margin: 10px;
+  background-color: #e9e9eb !important;
+}
+.message__user {
+  margin-left: auto;
+  background-color: #0b81ff !important;
+}
