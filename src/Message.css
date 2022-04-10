@@ -2,12 +2,25 @@
   /* padding: 2px; */
   width: fit-content;
   margin: 10px;
-  padding: 10px !important;
+}
+.card__content {
+  padding: 5px 15px !important;
 }
 .message__user {
   margin-left: auto;
+  color: #fff;
+  text-align: left;
+}
+.message__guestCard {
+  background-color: #e9e9eb !important;
+}
+.message__userCard {
   background-color: #0b81ff !important;
 }
-.message__guest {
-  background-color: #e9e9eb !important;
+.from {
+  margin: 4px;
+  color: #6f6f6f;
+  text-align: left;
+  font-family: cursive;
+  font-size: 13px;
 }

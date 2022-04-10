@@ -21,13 +21,29 @@
   flex: 1;
 }
 .app__iconButton {
-  flex: 0 !;
+  flex: 0 !important;
 }
-h1,
+h3,
 h2 {
   margin: 1px;
+  color: rgb(52, 50, 50);
+}
+h3 {
+  color: gray;
 }
 img {
   width: 100px;
   height: auto;
+}
+.creator {
+  font-family: cursive;
+  color: blueviolet;
+}
+.display__user {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  font-weight: bolder;
+  text-transform: capitalize;
+  color: rgb(176, 16, 96);
+  font-size: 25px;
 }

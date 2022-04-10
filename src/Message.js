@@ -6,17 +6,21 @@ const Message = forwardRef(({ message, username }, ref) => {
   const isUser = username === message.username;
 
   return (
-    <Card
-      ref={ref}
-      className={`message ${isUser ? 'message__user' : 'message__guest'}`}
-    >
-      <CardContent>
-        <Typography color='black' variant='h5' component='h2'>
-          {!isUser && `${message.username || 'unknown user'}:`}
-          {message.message}
-        </Typography>
-      </CardContent>
-    </Card>
+    <div className={`message ${isUser && 'message__user'}`}>
+      <div className='from'>
+        {!isUser && `${message.username || 'unknown user'}`}
+      </div>
+      <Card
+        ref={ref}
+        className={`${isUser ? 'message__userCard' : 'message__guestCard'}`}
+      >
+        <CardContent className='card__content'>
+          <Typography color='black' variant='h6' component='h2'>
+            {message.message}
+          </Typography>
+        </CardContent>
+      </Card>
+    </div>
   );
 });
 
